@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var redSwitch: UISwitch!
+    
+    @IBOutlet weak var greenSwitch: UISwitch!
+    
+    @IBOutlet weak var blueSwitch: UISwitch!
+    
+    @IBOutlet weak var box: UIView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
