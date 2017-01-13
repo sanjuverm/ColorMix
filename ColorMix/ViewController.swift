@@ -18,6 +18,28 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var box: UIView!
     
+    var r = 0
+    var b = 0
+    var g = 0
+    
+    
+    @IBAction func switchUp(_ sender: Any) {
+        if redSwitch.isOn{
+            r = 1
+        }
+        
+        if greenSwitch.isOn{
+            g = 1
+        }
+        
+        if blueSwitch.isOn{
+            b = 1
+        }
+        
+        box.backgroundColor = UIColor(colorLiteralRed: Float(r), green: Float(g), blue: Float(b), alpha: Float(1))
+        
+    }
+    
     
     
     override func viewDidLoad() {
