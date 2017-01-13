@@ -27,13 +27,22 @@ class ViewController: UIViewController {
         if redSwitch.isOn{
             r = 1
         }
+        else{
+            r = 0
+        }
         
         if greenSwitch.isOn{
             g = 1
         }
+        else{
+            g = 0
+        }
         
         if blueSwitch.isOn{
             b = 1
+        }
+        else {
+            b = 0
         }
         
         box.backgroundColor = UIColor(colorLiteralRed: Float(r), green: Float(g), blue: Float(b), alpha: Float(1))
