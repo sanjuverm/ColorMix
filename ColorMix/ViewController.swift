@@ -38,6 +38,8 @@ class ViewController: UIViewController {
         
         box.backgroundColor = UIColor(colorLiteralRed: Float(r), green: Float(g), blue: Float(b), alpha: Float(1))
         
+        print(r, g, b)
+        
     }
     
     
