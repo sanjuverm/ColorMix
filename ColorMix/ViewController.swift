@@ -23,33 +23,28 @@ class ViewController: UIViewController {
     var g = 0
     
     
-    @IBAction func switchUp(_ sender: Any) {
+    @IBAction func switchesAndBitches(_ sender: Any) {
+        
         if redSwitch.isOn{
             r = 1
-        }
-        else{
+        } else {
             r = 0
         }
         
         if greenSwitch.isOn{
             g = 1
-        }
-        else{
+        } else{
             g = 0
         }
         
         if blueSwitch.isOn{
             b = 1
-        }
-        else {
+        } else{
             b = 0
         }
         
-        box.backgroundColor = UIColor(colorLiteralRed: Float(r), green: Float(g), blue: Float(b), alpha: Float(1))
-        
-        print(r, g, b)
-        
     }
+    
     
     
     
