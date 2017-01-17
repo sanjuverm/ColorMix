@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     var r : CGFloat = 1
     var b : CGFloat =  1
     var g : CGFloat = 1
+   
+    
     
     
     @IBAction func switchesAndBitches(_ sender: Any) {
@@ -51,6 +53,8 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        redSwitch.addTarget(self, action: #selector(switchesAndBitches), for: .valueChanged)
+        greenSwitch.addTarget(self, action: #selector(switchesAndBitches), for: .valueChanged)
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
