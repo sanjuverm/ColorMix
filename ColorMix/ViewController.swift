@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var box: UIView!
     
-    var r : CGFloat = 0
-    var b : CGFloat =  0
-    var g : CGFloat = 0
+    var r : CGFloat = 1
+    var b : CGFloat =  1
+    var g : CGFloat = 1
     
     
     @IBAction func switchesAndBitches(_ sender: Any) {
@@ -43,7 +43,8 @@ class ViewController: UIViewController {
             b = 0
         }
         
-        box.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1.0)
+        //box.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1.0)
+        box.backgroundColor = UIColor(red: CGFloat(r), green: CGFloat(g), blue: CGFloat(b), alpha: CGFloat(1))
     }
     
     
