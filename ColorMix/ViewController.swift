@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //This is for the switches
 
     @IBOutlet weak var redSwitch: UISwitch!
     
@@ -22,7 +24,24 @@ class ViewController: UIViewController {
     var b : CGFloat =  1
     var g : CGFloat = 1
    
+    //This is for the sliders
     
+    @IBOutlet weak var sliderBox: UIView!
+    
+    @IBOutlet weak var redSlider: UISlider!
+    
+    @IBOutlet weak var greenSlider: UISlider!
+    
+    @IBOutlet weak var blueSlider: UISlider!
+    
+    var rS : CGFloat = 255
+    var gS : CGFloat = 255
+    var bS : CGFloat = 255
+    
+    @IBAction func slidersAndRiders(_ sender: Any) {
+        
+        
+    }
     
     
     @IBAction func switchesAndBitches(_ sender: Any) {
