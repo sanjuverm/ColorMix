@@ -39,6 +39,10 @@ class ViewController: UIViewController {
     var bS : CGFloat = 255
     
     @IBAction func slidersAndRiders(_ sender: Any) {
+        rS = CGFloat(redSlider.value)
+        gS = CGFloat(greenSlider.value)
+        bS = CGFloat(blueSlider.value)
+        
         
         
     }
