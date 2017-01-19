@@ -43,8 +43,7 @@ class ViewController: UIViewController {
         gS = CGFloat(greenSlider.value)
         bS = CGFloat(blueSlider.value)
         
-        
-        
+        sliderBox.backgroundColor = UIColor(red: CGFloat(rS), green: CGFloat(gS), blue: CGFloat(bS), alpha: CGFloat(1))
     }
     
     
@@ -76,6 +75,9 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        redSlider.addTarget(self, action: #selector (slidersAndRiders), for: .valueChanged)
+        greenSlider.addTarget(self, action: #selector (slidersAndRiders), for: .valueChanged)
+        
         redSwitch.addTarget(self, action: #selector(switchesAndBitches), for: .valueChanged)
         greenSwitch.addTarget(self, action: #selector(switchesAndBitches), for: .valueChanged)
         super.viewDidLoad()
